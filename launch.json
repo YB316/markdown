@@ -1,0 +1,29 @@
+{
+    // 使⽤ IntelliSense 了解相关属性。
+    // 悬停以查看现有属性的描述。
+    // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387     "version": "0.2.0",
+  "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "gcc.exe - ⽣成和调试活动⽂件",  // 该调试任务的名字，启动调试时会在待选列表中显⽰
+            "type": "cppdbg",                      
+            "request": "launch",                  
+            "program": "${fileDirname}\\${fileBasenameNoExtension}.exe",        
+            "args": [],                          
+            "stopAtEntry": false,                  //指示是否在main函数处停止，false指示直接运行到第一个断点处或完成完整程序，true则在main函数处停止
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false,              //指示是否使用外部控制台，false表示使用VScode内部控制台终端，true则是单独弹出独立黑框终端
+            "MIMode": "gdb",
+            "miDebuggerPath": "C:\\mingw64\\bin\\gdb.exe",  //指定gbd调试器路径，指引VScode找到电脑中的MinGW安装位置和调试器
+            "setupCommands": [
+                {
+                    "description": "为 gdb 启⽤整⻬打印",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "C/C++: gcc.exe build active file"  // 调试前的预执⾏任务，这⾥的值是tasks.json⽂件中对应的编译任务，也就是调试前需要先编译
+        }
+    ]
+}
