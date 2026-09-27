@@ -33,4 +33,28 @@
 #### 什么是链表？
 
 1.1 数组储存成连续排列，占用一整块连续的空间，仅储存数据；链表的每个元素在内存中随机散落，不连续，每个节点除了存数据还要存个指针记录下一个节点地址  
-2.1 
+2.1 单向链表节点的结构特点为分成两个模块，一部分储存数据，另一部分储存关于下一节点储存位置的指针，最末尾节点指针为NULL  
+2.2 ![alt text](image-8.png)  
+
+#### 实现基本的链操作
+
+1.1 ![alt text](image-7.png)  
+
+#### 添加元素
+
+1.1 ![alt text](image-4.png)  
+2.1 ![alt text](image-9.png)另一种![alt text](image-10.png)  
+3.1 ![alt text](image-11.png) ![alt text](image-12.png)  
+
+#### 查找元素
+
+1.1 ![alt text](image-13.png)  
+2.1 ![alt text](image-14.png)  
+
+#### 删除和更改
+
+1.1 ![alt text](image-15.png)  
+
+#### 反转函数
+
+1.1 ![alt text](image-16.png)  
